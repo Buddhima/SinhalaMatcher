@@ -1,5 +1,10 @@
 README : Sinhala Matcher
 Joomla! plugin for find the relavent Sinhala word that match the English word
+
+Sinhala is the National Language of Sri Lanka. There for Sinhala language speakers face difficulties in understanding meaning of English words. This would be a solution for that. 
+
+Would be very helpful when finding the equal of Sinhala term.
+
 Worked perfectly under local conditions
 
 Need to add "EnglishToSinhala" in to www or htdocs folder of your server
