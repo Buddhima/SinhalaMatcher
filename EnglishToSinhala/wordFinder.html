@@ -1,0 +1,124 @@
+<head>
+<script src="http://code.jquery.com/jquery-latest.pack.js"></script>
+<script src="http://dev.jquery.com/view/tags/ui/latest/ui/effects.core.js"></script>
+<script src="http://dev.jquery.com/view/tags/ui/latest/ui/effects.highlight.js"></script>
+<script src="RequestHandler.js"></script>
+<style type="text/css">
+#text {
+float:left;
+}
+#show {
+float:left;
+}
+#text1 {
+float:left;
+}
+#body_background {
+	background-color: #6CF;
+	float: left;
+	height: 150%;
+	width: 100%;
+}
+#input_text {
+	margin-left:: 20%;
+	float: left;
+	width: 100%;
+	margin-left: 30%;
+}
+#body_background #input_text #text {
+	float: left;
+	width: 300px;
+	height: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-top: 1%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	margin-left: 10%;
+	font-size: 18px;
+	padding-left: 8px;
+}
+#body_background #button #show {
+	font-family: "Arial Black", Gadget, sans-serif;
+	float: left;
+	height: 30px;
+	width: 150px;
+	margin-top: 0%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	margin-left: 45%;
+	color: #000;
+	background-color: #3C6;
+}
+#button {
+	margin-bottom:: 4%;
+	margin-left:20%
+	float: left;
+	width: 100%;
+}
+#result_text {
+	font-family: Arial, Helvetica, sans-serif;
+	float: left;
+	width: 100%;
+	margin-top: 0%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	margin-left: 35%;
+}
+</style>
+</head>
+
+<body>
+<div class="body_background" id="body_background">
+
+<CENTER>
+<img src = "joomla.png"/ alt = "Joomla! logo" width = "750" height ="250" >
+</CENTER>
+
+
+<div id="input_text">
+<p  id="title" >
+<font size = "5">
+Enter English Word Here
+</font>
+</p>
+
+<input type="text" id='text' rows="25%" cols="75%">
+</div>
+
+<div id="button">
+<input name="show" id="show" type="button" value="Show Meaning" onClick="find_words()">
+</div>
+<div id="result_text">
+<div id="text1"></div> 
+</div>
+<script>
+
+var test = "";
+
+			function find_words(){
+				var a = $('#text').val();
+										
+				var container = $('#text1');
+				var trigger = $('#title'); 
+				 
+				 var url ="http://maduraonline.com/?find="+a;
+    				if(!trigger.hasClass('loaded')){
+      					trigger.append('<span></span>');
+      					trigger.addClass('loaded');
+      					var msg = trigger.find('span::last');
+    				} else {
+      					var msg = trigger.find('span::last');
+    				}	
+    				ajax_finder(url,msg,container);
+					
+			}
+			
+			
+	
+ 
+</script>
+
+</div>
+</body>
+

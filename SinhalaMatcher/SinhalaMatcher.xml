@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">	
+<!--An extension of the type 'Plugin' in the 'system' group-->		
+	<name>System - SinhalaMatcher</name>
+	<creationDate>March 2012</creationDate>
+	<version>1.0</version>
+        <author>Buddhima Wijeweera</author>
+        <description>This is a plug-in for joomla helps to find similar meaning of Sinhala word.</description>
+        
+	<files>
+		<filename plugin="SinhalaMatcher">SinhalaMatcher.php</filename>
+	</files>
+	<params>
+	</params>
+</install>
