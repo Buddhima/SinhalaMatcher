@@ -1,0 +1,9 @@
+README : Sinhala Matcher
+Joomla! plugin for find the relavent Sinhala word that match the English word
+Worked perfectly under local conditions
+
+Need to add "EnglishToSinhala" in to www or htdocs folder of your server
+Install the .zip file given.
+Goto Extensions -> Plugin Manager to Enable the plugin
+
+Enjoy !
